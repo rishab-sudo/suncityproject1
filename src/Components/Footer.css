@@ -1,0 +1,36 @@
+.footer_containerFluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-color: #000;
+ width: 100%;
+height: 160px;
+}
+.footer_content_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    text-decoration: none !important;
+}
+.footer-links li {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+.footer-links li a:hover,
+.footer-links li a.active {
+    color: #F40000;
+}

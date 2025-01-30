@@ -1,0 +1,54 @@
+/* our experties css */
+.home-experties-section {
+    padding: 0px;
+   }
+
+.experties-heading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+}
+
+.custom-Row {
+    margin-top: 5%;
+    padding: 50px;
+}
+
+.hexperties-img {
+    width: 70%;
+    height: 280px;
+}
+
+.shift-right {
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
+
+.hexperties_description_div {
+    max-width: 90%;
+}
+
+/* Mobile view css */
+@media (max-width: 767px) {
+    .hexperties_description_div {
+        min-width: 99%;
+        margin-top: 25px;
+    }
+    .custom-Row {
+        margin-top: 5%;
+        padding: 0px 15px;
+    }
+    .hexperties-img {
+        min-width: 100%;
+        height: 245px;
+        margin: auto;
+ }
+
+}

@@ -1,0 +1,109 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+/* Logo styling */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Desktop links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-right: 14%;
+}
+
+.navbar-links li {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+    color: #F40000;
+}
+
+/* Hamburger menu (hidden on desktop) */
+.navbar-hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile menu */
+.navbar-mobile-menu {
+    position: fixed;
+    top: 58px;
+    left: -100%;
+    width: 235px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar-mobile-menu.open {
+    left: 0;
+}
+
+.navbar-mobile-menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar-mobile-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.navbar-mobile-menu li a:hover,
+.navbar-mobile-menu li a.active {
+    color: #007bff;
+}
+
+/* Overlay for mobile menu gray opicity*/
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+}
